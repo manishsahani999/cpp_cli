@@ -24,13 +24,13 @@ const NavbarContainer = () => {
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="/components/">Get Started</NavLink>
+                  <NavLink href="/cli-plus-plus/">Get Started</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components/">API</NavLink>
+                  <NavLink href="">API</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components/">Docs</NavLink>
+                  <NavLink href="">Docs</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/components/">Blog</NavLink>
