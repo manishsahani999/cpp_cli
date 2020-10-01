@@ -1,0 +1,52 @@
+*,
+*::after *::before {
+  margin: 0;
+  border: 0;
+  box-sizing: 0;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: "Open Sans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:wght@300;400&display=swap");
+
+@import "./scss/navbar";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3, h4, h5, p {
+  margin-bottom: 1rem;
+}
+
+.fryday-header {
+  padding: 0;
+  overflow: hidden;
+
+  &-box {
+    background-color: #eff1f3;
+    padding: 85px 11% 60px;
+    height: 78vh;
+    border-radius: 12px;
+  }
+}
+
+.h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.lg-1 {
+  background-image: linear-gradient(to right, #f5f3f3, #ffffff, #ffffff, #ffffff, #ffffff);
+}
+
+.fryday {
+
+  &-footer {
+    padding: 4rem 0;
+  }
+}
