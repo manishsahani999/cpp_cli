@@ -27,16 +27,16 @@ const NavbarContainer = () => {
                   <NavLink href="/cli-plus-plus/">Get Started</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="">API</NavLink>
+                  <NavLink href="/cli-plus-plus/">API</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="">Docs</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/components/">Blog</NavLink>
+                  <NavLink href="">Tutorials</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                  <NavLink href="https://github.com/manishsahani999/cli-plus-plus">GitHub</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

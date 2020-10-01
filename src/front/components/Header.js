@@ -9,9 +9,9 @@ const Header = () => {
             <section className="fryday-header">
                 <Row>
                     <Col md="6" className="">
-                        <div style={{ padding: '5rem 5rem 2rem 5rem' }}>
+                        <div style={{ padding: '5rem 0 2rem 5rem' }}>
                             <h2>
-                                Cli++ <span className="text-muted">Complete Solution for command line development</span>
+                                Delightful C++ command line interface development
                             </h2>
                             <p>
                                 Cli++ provides a framework for building cli apps with expressive, elegant syntax. I’ve already laid the foundation — freeing you to create awesome cli applications without sweating the small things.
@@ -30,24 +30,24 @@ const Header = () => {
                             </div>
                             <p>Will be available on brew after first release, right now you need to add this path under includes headers. </p>
                         </div>
-                        <div style={{ padding: '3rem 5rem 2rem 5rem' }}>
+                        <div style={{ padding: '3rem 0rem 0rem 5rem' }}>
                             <h4 className="text-muted">
                                 how would you <span className="text-danger">build</span> cli++?
                                 The good news is that, there's <span className="text-dark"> nothing to build</span>.
                             </h4>
                             <p>
-                                The library is a header only library, just <code>#include</code> and move on to your application. 
-                                <span className="text-muted ml-1">
-                                    The distribution comes with a cmake file, to help you start with the building your project
-                                    for any platform.
-                                </span>
+                                The library is a header only library, just <code>{`#include <cli++/commander>`} </code> and move on to your application.
+                                <br></br>
+                                {/* <small>
+                                    <span className="text-muted">
+                                        The distribution comes with a cmake file, to help you start with the building your project
+                                        for any platform.
+                                    </span>
+                                </small> */}
                             </p>
                         </div>
                     </Col>
-                    <Col md="6" style={{ overflow: 'hidden', paddingTop: '2.3rem' }}>
-                        <h1 className="h1" style={{ marginLeft: '4.2rem' }}>
-                            Delightful C++ Command line development
-                        </h1>
+                    <Col md="6" style={{ overflow: 'hidden', paddingTop: '4.3rem', position: 'relative' }}>
                         <div>
                             <img src={require('assets/img/terminal.png')} style={{ maxWidth: '80rem' }} alt="" srcset="" />
                         </div>
@@ -69,9 +69,50 @@ const Header = () => {
                             </h2>
                         </div>
                         <div style={{ padding: '3rem', backgroundColor: '#f7f7f7', marginLeft: '-13rem' }}>
-                            <p style={{ textAlign: 'justify', textJustify: 'inter-word', margin: '0' }}>
-                                A suite of tools to build attractive command line interfaces (CLIs), from semantic elements: headers, lists, alerts, paragraphs, etc. 
-                                
+                            <h4 className="text-muted" style={{ textAlign: 'justify', textJustify: 'inter-word', margin: '0' }}>
+                                cli++ is the complete solution for command line development
+                            </h4>
+                        </div>
+                        <div className="mt-2 pr-4" style={{ borderRadius: '22px', paddingTop: '3rem', marginRight: '-1rem' }}>
+                            <h4 className="mb-2">
+                                Easy Commanding
+                            </h4>
+                            <code>
+                                program.command("cmd [arg]", "description")
+                            </code>
+                            <p className="mt-2">
+                                Elegent and expressive design for defining commands with arguments.
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+            </section>
+            <section>
+                <Row>
+                    <Col md="6">
+                        <div style={{ borderRadius: '22px', paddingLeft: '5rem' }}>
+                            <h4 className="mb-2">
+                                Prebuilt methods for default options
+                            </h4>
+                            <code>
+                                program.version("1.0");
+                            </code>
+                            <p className="mt-2">
+                                prebuilt methods to help you with the comman features like <code>--help</code> and <code>--version</code>.
+                                Versioning has never been easier with <code>.version()</code> method.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="pr-4" style={{ borderRadius: '22px', marginRight: '-1rem' }}>
+                            <h4 className="mb-2">
+                                Fully featured Flag / Options
+                            </h4>
+                            <code>
+                                program.option("-a", "simplest option");
+                            </code>
+                            <p className="mt-2">
+                                Simpler flag management, defined with the <code>.option()</code> method, also serving as documentation for the options.
                             </p>
                         </div>
                     </Col>
