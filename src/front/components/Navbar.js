@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -16,9 +17,9 @@ const NavbarContainer = () => {
     <>
       <div>
         <Navbar className="fryday-navbar" light expand="md">
-          <Container style={{ maxWidth: '1240px' }}>
+          <Container>
             <NavbarBrand className="fryday-navbar-brand" href="/">
-              Wire under the ocean
+              Wire Under the Ocean
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
@@ -26,17 +27,19 @@ const NavbarContainer = () => {
                 <NavItem>
                   <NavLink href="/cli-plus-plus/">Get Started</NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                   <NavLink href="/cli-plus-plus/">API</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="">Docs</NavLink>
+                  <Link to="/docs"><NavLink style={{}}>Docs</NavLink></Link>
                 </NavItem>
                 <NavItem>
                   <NavLink href="">Tutorials</NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem>
-                  <NavLink href="https://github.com/manishsahani999/cli-plus-plus">GitHub</NavLink>
+                  <NavLink href="https://github.com/manishsahani999/cli-plus-plus">
+                      <span>Github</span>
+                  </NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

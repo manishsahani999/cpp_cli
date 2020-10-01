@@ -18,6 +18,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+section {
+  overflow-x: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 h3, h4, h5, p {
   margin-bottom: 1rem;
 }
