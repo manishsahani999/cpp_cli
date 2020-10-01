@@ -46,10 +46,10 @@ const FooterContainer = () => {
                             </span>
                         </Col>
                         <Col md="3" className="text-justify">
-                            <h4>About Us</h4>
-                            <p>
+                            {/* <h4>About Us</h4> */}
+                            {/* <p>
                                 Stack is a robust multipurpose HTML template designed with modularity at the core. Easily combine over 290 interface blocks to create websites for any purpose.
-                            </p>
+                            </p> */}
                         </Col>
                     </Row>
                 </Container>
